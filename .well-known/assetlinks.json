@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.vixler.calculadora",
+      "sha256_cert_fingerprints": [
+        "22:30:E5:E3:F4:EB:8A:C3:EA:69:0F:BE:A5:9E:11:C7:3D:D2:9D:D8:A5:3D:3C:C2:1D:03:89:1B:A8:47:94:A3"
+      ]
+    }
+  }
+]
