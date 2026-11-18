@@ -110,8 +110,8 @@
             background: none;
             border: none;
             cursor: pointer;
-            width: 40px;
-            height: 40px;
+            width: 42px;
+            height: 42px;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -122,7 +122,7 @@
         }
         .top-btn:hover   { background-color: var(--hover-bg); }
         .top-btn:active  { transform: scale(0.9); }
-        .top-btn svg     { width: 22px; height: 22px; fill: currentColor; }
+        .top-btn svg     { width: 24px; height: 24px; fill: currentColor; }
 
         /* ============ HISTORIAL ============ */
         .history-panel {
@@ -148,7 +148,7 @@
             align-items: center;
             margin-bottom: 15px;
             color: var(--text-color);
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             font-weight: 600;
             flex-shrink: 0;
         }
@@ -173,12 +173,12 @@
         .history-item:active { background-color: var(--hover-bg); }
 
         .history-expr {
-            font-size: 1rem;
+            font-size: 1.2rem;
             color: var(--preview-color);
             word-break: break-all;
         }
         .history-res {
-            font-size: 1.3rem;
+            font-size: 1.65rem;
             font-weight: 700;
             color: var(--text-color);
             margin-top: 4px;
@@ -188,17 +188,17 @@
             color: var(--preview-color);
             text-align: center;
             margin-top: 60px;
-            font-size: 1rem;
+            font-size: 1.15rem;
         }
         .btn-clear-history {
             flex-shrink: 0;
             margin-top: 12px;
-            padding: 12px;
+            padding: 14px;
             border: none;
             border-radius: 12px;
             background: var(--hover-bg);
             color: var(--text-color);
-            font-size: 0.95rem;
+            font-size: 1.05rem;
             font-weight: 500;
             cursor: pointer;
             touch-action: manipulation;
@@ -209,19 +209,19 @@
         /* ============ PANTALLA ============ */
         .display {
             flex: 1;
-            min-height: 70px;
+            min-height: 75px;
             background-color: var(--bg-color);
             color: var(--text-color);
             text-align: right;
-            padding: 8px 6px;
+            padding: 8px 8px;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             overflow: hidden;
         }
         .expression {
-            font-size: clamp(1.8rem, 7vw, 2.8rem);
+            font-size: clamp(2.6rem, 10vw, 4.1rem);
             font-weight: 400;
             color: var(--text-color);
             letter-spacing: 0.5px;
@@ -230,16 +230,16 @@
             overflow-y: hidden;
             scrollbar-width: none;
             -ms-overflow-style: none;
-            line-height: 1.2;
+            line-height: 1.18;
             padding-bottom: 4px;
             touch-action: pan-x;
         }
         .expression::-webkit-scrollbar { display: none; }
 
         .preview {
-            font-size: clamp(1rem, 4vw, 1.4rem);
+            font-size: clamp(1.35rem, 5.2vw, 1.85rem);
             color: var(--preview-color);
-            min-height: 24px;
+            min-height: 30px;
             margin-top: 4px;
             white-space: nowrap;
             overflow: hidden;
@@ -251,19 +251,19 @@
         .buttons {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
+            gap: 12px;
             flex-shrink: 0;
         }
         button.calc-btn {
             width: 100%;
             aspect-ratio: 1;
             /* Limita según altura disponible para que nunca se salga */
-            max-width: min(90px, calc((100dvh - 210px) / 5.2));
+            max-width: min(92px, calc((100dvh - 210px) / 5.2));
             justify-self: center;
             align-self: center;
             border-radius: 50%;
             border: none;
-            font-size: clamp(1.1rem, 4.5vw, 1.65rem);
+            font-size: clamp(1.75rem, 6.8vw, 2.3rem);
             font-weight: 400;
             cursor: pointer;
             display: flex;
@@ -276,9 +276,9 @@
         button.calc-btn:active { transform: scale(0.92); filter: brightness(0.9); }
 
         .num    { background-color: var(--num-bg);    color: var(--num-color); }
-        .op     { background-color: var(--op-bg);     color: var(--op-color);  font-size: clamp(1.2rem, 5vw, 1.75rem); }
-        .ac     { background-color: var(--ac-bg);     color: var(--ac-color);  font-size: clamp(1rem, 4vw, 1.5rem); font-weight: 500; }
-        .equals { background-color: var(--equals-bg); color: var(--equals-color); font-size: clamp(1.3rem, 5.5vw, 1.9rem); font-weight: 700; }
+        .op     { background-color: var(--op-bg);     color: var(--op-color);  font-size: clamp(1.85rem, 7.2vw, 2.45rem); }
+        .ac     { background-color: var(--ac-bg);     color: var(--ac-color);  font-size: clamp(1.5rem, 5.8vw, 2rem); font-weight: 500; }
+        .equals { background-color: var(--equals-bg); color: var(--equals-color); font-size: clamp(2rem, 7.8vw, 2.6rem); font-weight: 600; }
 
         /* ============ ICONOS DE TEMA ============ */
         .sun-icon  { display: block; }
@@ -298,15 +298,16 @@
             .top-btn  { width: 32px; height: 32px; }
             .top-btn svg { width: 18px; height: 18px; }
             .display  { min-height: 44px; margin-bottom: 4px; padding: 4px; }
-            .expression { font-size: 1.4rem; }
-            .preview    { font-size: 0.95rem; min-height: 18px; margin-top: 2px; }
+            .expression { font-size: 1.9rem; }
+            .preview    { font-size: 1.15rem; min-height: 22px; margin-top: 2px; }
             .buttons    { gap: 6px; }
             button.calc-btn {
                 max-width: min(70px, calc((100dvh - 130px) / 5.5));
-                font-size: 1.1rem;
+                font-size: 1.5rem;
             }
-            .op     { font-size: 1.2rem; }
-            .equals { font-size: 1.3rem; }
+            .op     { font-size: 1.6rem; }
+            .ac     { font-size: 1.3rem; }
+            .equals { font-size: 1.7rem; }
         }
     </style>
 </head>
@@ -431,8 +432,6 @@
         const operators = ['+', '-', '×', '÷'];
         const lastChar  = currentExpr.slice(-1);
 
-        // Después de '=': si escribes dígito o '(' se reinicia;
-        // si escribes operador o '%' se continúa el cálculo.
         if (justCalculated) {
             if (!operators.includes(val) && val !== '%') {
                 currentExpr = '';
@@ -440,17 +439,14 @@
             justCalculated = false;
         }
 
-        // '%' inválido al inicio, tras operador, tras '(' o duplicado
         if (val === '%' &&
             (currentExpr === '' || operators.includes(lastChar) ||
              lastChar === '(' || lastChar === '%')) {
             return;
         }
 
-        // No se puede empezar con estos operadores
         if (currentExpr === '' && ['+', '×', '÷', ')'].includes(val)) return;
 
-        // Reemplazar operador si el último carácter también lo es
         if (operators.includes(val) && operators.includes(lastChar)) {
             currentExpr = currentExpr.slice(0, -1) + val;
             haptic();
@@ -458,7 +454,6 @@
             return;
         }
 
-        // Insertar '×' automática tras ')' o '%'
         if ((lastChar === ')' || lastChar === '%') && /[0-9.]/.test(val)) {
             currentExpr += '×' + val;
         } else {
@@ -476,8 +471,6 @@
         }
 
         const lastChar = currentExpr.slice(-1);
-
-        // Verificar si el último número ya tiene punto
         const parts = currentExpr.split(/[+\-×÷()%]/);
         const lastNumber = parts[parts.length - 1] || '';
         if (lastNumber.includes('.')) return;
@@ -539,27 +532,19 @@
 
     /* ============ MATEMÁTICAS ============ */
     function processPercentages(expr) {
-        // 1) Convertir signos visuales a matemáticos primero
         let e = expr.replace(/×/g, '*').replace(/÷/g, '/');
 
-        // 2) a + b%  →  a + (a * b / 100)
-        //    a - b%  →  a - (a * b / 100)
         e = e.replace(
             /(\d+(?:\.\d+)?)\s*([+\-])\s*(\d+(?:\.\d+)?)%/g,
             (_, a, op, b) => `${a} ${op} (${a} * ${b} / 100)`
         );
 
-        // 3) a * b%  →  a * (b / 100)
-        //    a / b%  →  a / (b / 100)
         e = e.replace(
             /(\d+(?:\.\d+)?)\s*([*/])\s*(\d+(?:\.\d+)?)%/g,
             (_, a, op, b) => `${a} ${op} (${b} / 100)`
         );
 
-        // 4) Porcentaje suelto: 50%  →  (50 / 100)
         e = e.replace(/(\d+(?:\.\d+)?)%/g, '($1 / 100)');
-
-        // 5) Porcentaje tras paréntesis: (expr)%  →  (expr) / 100
         e = e.replace(/\)%/g, ') / 100');
 
         return e;
@@ -569,14 +554,12 @@
         if (expr === '') return null;
 
         try {
-            // Auto-cerrar paréntesis pendientes
             const openCount  = (expr.match(/\(/g) || []).length;
             const closeCount = (expr.match(/\)/g) || []).length;
             let cleanExpr = expr + ')'.repeat(Math.max(0, openCount - closeCount));
 
             cleanExpr = processPercentages(cleanExpr);
 
-            // Si termina en operador, aún no se puede calcular
             if (/[+\-*/]$/.test(cleanExpr)) return null;
 
             const result = Function('"use strict";return (' + cleanExpr + ')')();
@@ -662,11 +645,11 @@
 
             const exprEl = document.createElement('div');
             exprEl.className = 'history-expr';
-            exprEl.textContent = item.expr;          // ← textContent (seguro)
+            exprEl.textContent = item.expr;
 
             const resEl = document.createElement('div');
             resEl.className = 'history-res';
-            resEl.textContent = '= ' + item.result;  // ← textContent (seguro)
+            resEl.textContent = '= ' + item.result;
 
             itemEl.appendChild(exprEl);
             itemEl.appendChild(resEl);
